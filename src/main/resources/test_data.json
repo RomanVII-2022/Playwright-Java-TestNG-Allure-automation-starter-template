@@ -1,12 +1,14 @@
-{
-  "web": {
+[
+  {
+    "name": "web",
     "url": "https://thinking-tester-contact-list.herokuapp.com",
     "email": "test.user@test.com",
     "password": "12345678"
   },
-  "api": {
+  {
+    "name": "api",
     "url": "https://thinking-tester-contact-list.herokuapp.com",
     "email": "test.user@test.com",
     "password": "12345678"
   }
-}
+]

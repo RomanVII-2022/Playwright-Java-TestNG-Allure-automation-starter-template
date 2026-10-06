@@ -3,8 +3,9 @@ package org.automation.config;
 public class PlatformConfig {
 
     private String name;
-    private WebConfig webConfig;
-    private ApiConfig apiConfig;
+    private String url;
+    private String email;
+    private String password;
 
     public String getName() {
         return name;
@@ -14,19 +15,27 @@ public class PlatformConfig {
         this.name = name;
     }
 
-    public void setWebConfig(WebConfig webConfig){
-        this.webConfig = webConfig;
+    public String getUrl() {
+        return url;
     }
 
-    public WebConfig getWebConfig(){
-        return this.webConfig;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
-    public void setApiConfig(ApiConfig apiConfig){
-        this.apiConfig = apiConfig;
+    public String getEmail() {
+        return email;
     }
 
-    public ApiConfig getApiConfig(){
-        return this.apiConfig;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
