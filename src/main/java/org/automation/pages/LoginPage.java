@@ -24,4 +24,22 @@ public class LoginPage extends BasePage {
     private Locator submitButtonElement(){
         return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Submit"));
     }
+
+    public void navigateToLoginPage(String url){
+        navigate(url);
+    }
+
+    public void enterEmail(String email){
+        emailInputElement().click();
+        emailInputElement().fill(email);
+    }
+
+    public void enterPassword(String password){
+        passwordInputElement().click();
+        passwordInputElement().fill(password);
+    }
+
+    public void clickSubmitButton(){
+        submitButtonElement().click();
+    }
 }
