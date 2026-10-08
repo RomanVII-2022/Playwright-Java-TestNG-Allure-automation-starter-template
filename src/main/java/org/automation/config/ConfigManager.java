@@ -12,7 +12,7 @@ import java.util.Optional;
 public class ConfigManager {
 
     private static final Logger logger = LoggerFactory.getLogger(ConfigManager.class);
-    private static final String CONFIG_FILE = "test_data.json";
+    private static final String CONFIG_FILE = "platform_data.json";
     private static ConfigManager instance;
     private List<PlatformConfig> platforms;
 

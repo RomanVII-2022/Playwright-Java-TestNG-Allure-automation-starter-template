@@ -1,0 +1,15 @@
+[
+  {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "dateOfBirth": "2000-10-10",
+    "email": "test@test.com",
+    "phone": "123456789",
+    "address1": "Test Address",
+    "address2": "Test Address 2",
+    "city": "Test City",
+    "province": "Test Province",
+    "postalCode": "00100",
+    "country": "Kenya"
+  }
+]
