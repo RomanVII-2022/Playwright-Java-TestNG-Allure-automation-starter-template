@@ -3,12 +3,16 @@
     "name": "web",
     "url": "https://thinking-tester-contact-list.herokuapp.com",
     "email": "test.user@test.com",
-    "password": "12345678"
+    "password": "12345678",
+    "browser": "chromium",
+    "headless": false
   },
   {
     "name": "api",
     "url": "https://thinking-tester-contact-list.herokuapp.com",
     "email": "test.user@test.com",
-    "password": "12345678"
+    "password": "12345678",
+    "browser": "chromium",
+    "headless": true
   }
 ]

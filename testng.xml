@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    TestNG Suite Configuration
+    ==========================
+    
+    Run with Maven:
+      mvn test                          # Default: chromium, web, headless=false
+      mvn test -Dbrowser=firefox        # Firefox browser
+      mvn test -Dbrowser=webkit         # WebKit browser
+      mvn test -Dplatform=api           # API platform
+      mvn test -Dheadless=true          # Headless mode
+      mvn test -DslowMo=100             # Slow motion (ms)
+      
+    Generate Allure Report:
+      mvn clean test                    # Run tests
+      allure serve allure-results       # Open report in browser
+      
+    Or combine in one command:
+      mvn clean test allure:serve
+-->
+<suite name="Playwright Automation Suite" parallel="tests" thread-count="1" verbose="1">
+    
+    <listeners>
+        <!-- Allure TestNG Listener for reporting -->
+        <!-- Note: The listener is also registered via the allure-maven plugin in pom.xml -->
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    
+    <test name="Web Automation Tests - Chromium">
+        <parameter name="browser" value="chromium"/>
+        <parameter name="platform" value="web"/>
+        <parameter name="headless" value="false"/>
+        <classes>
+            <class name="org.automation.tests.LoginTest"/>
+        </classes>
+    </test>
+    
+    <!-- Uncomment to run on Firefox
+    <test name="Web Automation Tests - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="platform" value="web"/>
+        <parameter name="headless" value="false"/>
+        <classes>
+            <class name="org.automation.tests.LoginTest"/>
+        </classes>
+    </test>
+    -->
+    
+    <!-- Uncomment to run on WebKit
+    <test name="Web Automation Tests - WebKit">
+        <parameter name="browser" value="webkit"/>
+        <parameter name="platform" value="web"/>
+        <parameter name="headless" value="false"/>
+        <classes>
+            <class name="org.automation.tests.LoginTest"/>
+        </classes>
+    </test>
+    -->
+    
+</suite>
