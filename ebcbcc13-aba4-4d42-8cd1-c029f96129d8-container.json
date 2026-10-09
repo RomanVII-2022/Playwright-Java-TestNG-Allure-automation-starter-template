@@ -1,1 +1,0 @@
-{"uuid":"ebcbcc13-aba4-4d42-8cd1-c029f96129d8","name":"Playwright Automation Suite","children":["94cedd48-eed8-4091-8959-41f2ce20d589"],"befores":[],"afters":[{"name":"afterSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1791574283758,"stop":1791574284121}],"start":1791574274141,"stop":1791574284121}
